@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const express = require("express");
 const bodyParser = require("body-parser");
 const { default: mongoose } = require("mongoose");
-const project = require("./model/project");
+const project = require("./src/model/project");
 
 dotenv.config();
 
