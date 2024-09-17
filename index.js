@@ -8,7 +8,10 @@ const project = require("./src/model/project");
 
 dotenv.config();
 
-const MONGODB_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.vyxxsts.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}`;
+const MONGODB_URI = process.env.NODE_ENV === 'development' ? `mongodb://localhost:27017/empiric-leap` : `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.vyxxsts.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}`;
+// const MONGODB_URI = `mongodb://localhost:27017/empiric-leap`
+
+console.log("MONGODB_URI : ", MONGODB_URI)
 
 const app = express();
 
