@@ -6,15 +6,26 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "start-dev": "nodemon index.js"
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "asposecellscloud": "^24.8.0",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.3",
+    "connect-mongodb-session": "^5.0.0",
     "dotenv": "^16.4.5",
+    "excel4node": "^1.8.2",
     "express": "^4.20.0",
+    "express-session": "^1.18.0",
+    "express-validator": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.6.1",
-    "nodemon": "^3.1.4"
+    "nodemailer": "^6.9.15",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "nodemon": "^3.1.4",
+    "pdf2table": "^0.0.2",
+    "pdfreader": "^3.0.5"
   }
 }
