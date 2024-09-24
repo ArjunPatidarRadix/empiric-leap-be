@@ -40,7 +40,7 @@ exports.postLogin = async (req, res, next) => {
     res.send({ user, token });
   } catch (error) {
     console.log(error);
-    res.status(400).send(error);
+    res.status(400).send({errorMessage: error.message});
   }
 };
 

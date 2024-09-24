@@ -6,6 +6,6 @@ const dashboardController = require("../controllers/dashboard");
 
 const router = express.Router();
 
-router.get("/getProjects", isAuth, dashboardController.getProjects);
+router.get("/getProjects",isAuth, dashboardController.getProjects);
 
 module.exports = router;
